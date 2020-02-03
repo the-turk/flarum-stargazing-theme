@@ -1,0 +1,86 @@
+header.App-header {
+  color: @lighter-text-color;
+
+  & a, & a.Button, & .Button {
+    color: @lighter-text-color;
+
+    &#home-link:hover {
+      text-decoration: none;
+    }
+  }
+
+  & a.Button, & .Button {
+    &:not(.Button--link) {
+      background: @header-link-button-bg;
+
+      &:hover,
+      &:focus,
+      &.focus {
+        color: @lighter-text-color;
+        background: darken(fadein(@header-link-button-bg, 5%), 5%);
+      }
+    }
+    &.Button--link {
+      &:hover,
+      &:focus,
+      &.focus {
+        color: @control-bg;
+      }
+    }
+  }
+
+  & .Header-secondary {
+    & a.Button, & .Button {
+      color: @lighter-text-color;
+      background: transparent;
+
+      &:hover,
+      &:focus,
+      &.focus {
+        color: @control-bg;
+        background: transparent;
+      }
+    }
+  }
+}
+
+@media @phone {
+  header.App-header {
+    & a, & a.Button, & .Button {
+      &:not(#home-link) {
+        color: @text-color !important;
+      }
+    }
+  }
+
+  .App-primaryControl, .App-backControl {
+    > .Button {
+      color: @lighter-text-color !important;
+    }
+  }
+
+  .App-titleControl {
+    color: @lighter-text-color !important;
+
+    > .Button {
+      color: @lighter-text-color;
+    }
+  }
+}
+
+@media @tablet-up {
+  .Header-secondary .Search {
+      margin-right: 10px;
+
+      input {
+        background-color: lighten(@control-bg, 15%) !important;
+        opacity: 0.5;
+      }
+
+      &:focus input,
+      &.focused input {
+        color: @text-color;
+        opacity: 1;
+      }
+  }
+}

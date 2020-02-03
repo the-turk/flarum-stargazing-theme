@@ -1,0 +1,35 @@
+.UserCard {
+  background: transparent !important;
+  .light-contents();
+  
+  > .darkenBackground {
+    background: darken(@hero-bg, 2%);
+  }
+
+  & .Button {
+    color: @control-color !important;
+    background: lighten(@control-bg, 2%);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: darken(fadein(lighten(@control-bg, 2%), 2%), 2%);
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+      color: @muted-color;
+      background: darken(lighten(@control-bg, 2%), 2%);
+    }
+  }
+
+  & .open {
+    > .Dropdown-toggle.Button {
+      background-color: darken(fadein(lighten(@control-bg, 2%), 2%), 3%);
+    }
+  }
+}
+.UserCard-info {
+  font-size: 14px;
+}

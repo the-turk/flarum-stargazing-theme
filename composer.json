@@ -1,0 +1,38 @@
+{
+  "name": "the-turk/flarum-stargazing-theme",
+  "description": "Stargazing theme for your forum.",
+  "keywords": [
+    "flarum",
+    "theme",
+    "stargazing"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "authors": [{
+    "name": "Hasan Özbey",
+    "email": "hasanoozbey@gmail.com",
+    "homepage": "https://github.com/the-turk"
+  }],
+  "support": {
+    "issues": "https://github.com/the-turk/flarum-stargazing-theme/issues",
+    "source": "https://github.com/the-turk/flarum-stargazing-theme"
+  },
+  "require": {
+    "flarum/core": ">=0.1.0-beta.10 <0.1.0-beta.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "TheTurk\\Stargazing\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Stargazing Theme",
+      "icon": {
+        "name": "fas fa-rocket",
+        "backgroundColor": "#C94BBF",
+        "color": "#fff"
+      }
+    }
+  }
+}

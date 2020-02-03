@@ -1,0 +1,45 @@
+.Button {
+  .Button--color(@control-color, lighten(@control-bg, 2%));
+}
+
+.Button--primary {
+  .Button--color(@lighter-text-color, @button-primary-bg);
+}
+
+.Button--color(@color; @background) {
+  color: @color;
+  background: @background;
+
+  &:hover,
+  &:focus,
+  &.focus {
+    background-color: darken(fadein(@background, 2%), 2%);
+  }
+
+  &:active,
+  &.active,
+  .open > .Dropdown-toggle& {
+    background-color: darken(fadein(@background, 2%), 3%);
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    background: @background;
+  }
+}
+
+.Button--gradient(@start-color; @end-color) {
+  color: @lighter-text-color !important;
+  background-image: -owg-linear-gradient(to right, @start-color, @end-color);
+  background-image: -webkit-gradient(linear, left top, right top, from(@start-color), to(@end-color));
+  background-image: linear-gradient(to right, @start-color, @end-color);
+
+  &:hover,
+  &:focus,
+  &.focus {
+    background-image: -owg-linear-gradient(to right, @end-color, @start-color);
+    background-image: -webkit-gradient(linear, left top, right top, from(@end-color), to(@start-color));
+    background-image: linear-gradient(to right, @end-color, @start-color);
+  }
+}

@@ -1,0 +1,53 @@
+.DiscussionListItem-title {
+  color: @discussion-list-heading-color;
+
+  .DiscussionList:not(.DiscussionList--searchResults) .read & {
+    color: @discussion-list-heading-color;
+  }
+}
+.DiscussionListItem-info {
+  font-size: 1rem;
+  .item-tags {
+    font-size: 15px;
+  }
+  .item-excerpt {
+    font-family: @post-font !important;
+    font-size: 0.8rem !important;
+    word-break: break-word !important;
+  }
+}
+
+@media @phone {
+  .DiscussionListItem-info {
+    font-size: 0.8rem;
+  }
+}
+
+@media @tablet-up {
+  .DiscussionListItem-content {
+    padding-left: 48px;
+  }
+  .DiscussionListItem-main {
+    padding: 12px 0;
+  }
+  .DiscussionListItem-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+}
+
+.DiscussionListItem {
+  background: @discussion-list-bg;
+
+  // quick fix for tablets
+  margin-left: 0px;
+  margin-right: 0px;
+
+  &:not(first-child) {
+    margin-top: 8px;
+  }
+
+  &:hover {
+    background: @discussion-list-bg-hover;
+  }
+}
