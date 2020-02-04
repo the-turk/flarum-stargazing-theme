@@ -62,7 +62,7 @@ composer require jordanjay29/flarum-ext-summaries
 
 ## Links
 
-- [Flarum Discuss post](https://github.com/the-turk/flarum-stargazing-theme)
+- [Flarum Discuss post](https://discuss.flarum.org/d/22694-stargazing-theme)
 - [Source code on GitHub](https://github.com/the-turk/flarum-stargazing-theme)
 - [Changelog](https://github.com/the-turk/flarum-stargazing-theme/blob/master/CHANGELOG.md)
 - [Report an issue](https://github.com/the-turk/flarum-stargazing-theme/issues)
