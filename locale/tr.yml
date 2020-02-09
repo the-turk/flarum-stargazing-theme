@@ -3,4 +3,5 @@ the-turk-stargazing-theme:
     settings:
       title:                 Stargazing Tema Ayarları
       relocateSidebar:       Yan menüyü sağ tarafa taşı
-      enableStarsBackground: "Yıldız" arkaplanını etkinleştir
+      enableStarsBackground: >
+                             "Yıldız" arkaplanını etkinleştir
