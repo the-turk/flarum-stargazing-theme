@@ -18,7 +18,7 @@
     "source": "https://github.com/the-turk/flarum-stargazing-theme"
   },
   "require": {
-    "flarum/core": ">=0.1.0-beta.10 <0.1.0-beta.12"
+    "flarum/core": "^0.1.0-beta.10"
   },
   "autoload": {
     "psr-4": {
