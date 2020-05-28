@@ -44,7 +44,7 @@ php flarum cache:clear
 
 ## Usage
 
-Just enable the extension and customize it if you wish.
+Just enable dark mode and the extension, customize it if you wish.
 
 You may want to backup & remove your color involved CSS modifications.
 
